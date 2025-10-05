@@ -1,0 +1,195 @@
+/*
+ * Estilos base para o Simulado CEP V Vasos Sanguíneos.
+ * Inspirado no visual da calculadora CEP IV, com um plano de fundo em degradê
+ * e cartões translúcidos. As cores e espaçamentos foram ajustados para criar
+ * uma experiência leve e focada. Evitamos qualquer referência a fibras.
+ */
+
+/* Reinicio de margens/padding e box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  /* Degradê suave inspirado no exemplo */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Contêiner central para todo o conteúdo */
+.container {
+  max-width: 600px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Cabeçalho com título e subtítulo */
+.header {
+  text-align: center;
+  padding: 40px 30px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #7f8c8d;
+  font-weight: 400;
+}
+
+/* Main section */
+.main {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Botões de navegação */
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+/* Timer style for o modo simulado */
+.timer {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Instruções abaixo do timer */
+.instructions {
+  font-size: 1rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Cartão de pergunta (utilizado no simulado e flash cards) */
+.question-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  width: 100%;
+}
+
+.question-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Resultados do simulado */
+.results-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.result-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.result-card h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.result-card .answer-text {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.start-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Flashcard answer style */
+.answer-text {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background: #667eea;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #5a64d6;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: #f39c12;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #e08e0b;
+  transform: translateY(-2px);
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #95a5a6;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}

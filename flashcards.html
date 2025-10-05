@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Cards | CEP&nbsp;V&nbsp;Vasos Sanguíneos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Flash Cards CEP&nbsp;V&nbsp;Vasos Sanguíneos</h1>
+            <p class="subtitle">Revise os vasos sanguíneos com perguntas embaralhadas.</p>
+        </header>
+        <main class="main">
+            <!-- Flashcard container -->
+            <div id="flashcard-container" class="question-card" style="display: none;">
+                <h2 id="flash-question" class="question-text"></h2>
+                <div id="flash-image-container" class="image-container"></div>
+                <div id="flash-answer" class="answer-text" style="display: none;"></div>
+                <div class="button-group">
+                    <button id="showAnswerBtn" class="btn btn-secondary">Mostrar Resposta</button>
+                    <button id="nextFlashBtn" class="btn btn-primary">Próxima</button>
+                </div>
+            </div>
+            <!-- Start button -->
+            <div id="flash-start-container" class="start-container">
+                <button id="flashStartBtn" class="btn btn-primary">Iniciar Flash Cards</button>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2025 Simulado CEP&nbsp;V</p>
+        </footer>
+    </div>
+    <!-- Carrega os dados dos cartões antes da lógica -->
+    <script src="data/cards.js"></script>
+    <script src="js/flashcards.js"></script>
+</body>
+</html>

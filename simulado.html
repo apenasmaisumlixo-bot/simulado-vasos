@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado | CEP&nbsp;V&nbsp;Vasos Sanguíneos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Simulado CEP&nbsp;V&nbsp;Vasos Sanguíneos</h1>
+            <p class="subtitle">Teste seus conhecimentos com 20 questões aleatórias.</p>
+        </header>
+        <main class="main">
+            <!-- Timer and instructions -->
+            <div id="timer" class="timer">Tempo restante: 30:00</div>
+            <p class="instructions">Anote sua resposta para treinar.</p>
+            <!-- Question container -->
+            <div id="question-container" class="question-card" style="display: none;">
+                <h2 id="question" class="question-text"></h2>
+                <div id="image-container" class="image-container"></div>
+                <button id="nextBtn" class="btn btn-primary">Próxima</button>
+            </div>
+            <!-- Results container (hidden initially) -->
+            <div id="results-container" class="results" style="display: none;">
+                <h2>Fim do Simulado</h2>
+                <p>Confira as questões e respostas abaixo:</p>
+                <div id="results-list" class="results-list"></div>
+                <a href="index.html" class="btn btn-secondary">Voltar ao início</a>
+            </div>
+            <!-- Start button -->
+            <div id="start-container" class="start-container">
+                <button id="startBtn" class="btn btn-primary">Iniciar Simulado</button>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2025 Simulado CEP&nbsp;V</p>
+        </footer>
+    </div>
+    <!-- Carrega os dados dos cartões antes da lógica -->
+    <script src="data/cards.js"></script>
+    <script src="js/simulado.js"></script>
+</body>
+</html>
